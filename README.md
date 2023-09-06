@@ -1,4 +1,4 @@
-# django-allauth-tutorial
+# Django Allauth: A Guide to Enabling Social Logins with GitHub
 
 
 Django allauth is a powerful and versatile authentication, registration, and account management solution for Django-based web applications. 
@@ -28,3 +28,44 @@ It simplifies the process of adding user authentication and registration feature
 
 12.Multilingual Support: Django allauth supports multiple languages and can be easily translated to match the language requirements of your project.
 
+
+# Django Allauth
+
+## Pros:
+
+Django Allauth is one of the most popular Django packages.
+It supports over 50 authentication providers (e.g., GitHub, Twitter, Google).
+Along with social auth, it also provides regular auth with username and password.
+Django Allauth makes it easy to customize the forms used during the auth flow.
+Cons:
+
+Despite the package’s popularity, the documentation is poorly structured and not meant for beginners.
+There’s quite a bit of initial setup required to register an OAuth provider, which can be difficult for beginners.
+There’s 4000+ issues on GitHub (as of writing).
+Python Social Auth
+
+Pros:
+
+Python Social Auth provides support for several Python web frameworks like Django, Flask, Webpy, Pyramid, and Tornado.
+It supports almost 50 OAuth providers.
+It supports the Django ORM and MongoEngine ODM.
+It provides a storage interface to allow users to add more ORMs.
+Cons:
+
+The documentation is a bit simpler, but it could still use some work with regard to the organization.
+Again, there’s quite a bit of initial setup required to register an OAuth provider, which can be difficult for beginners.
+There’s close to 125 open issues on GitHub (as of writing).
+Both packages have their ups and downs. However, this tutorial focuses on Django Allauth as it’s much more popular and supports social auth and regular auth via username and password.
+
+prerequisites
+
+Python (version 3.x)
+Django (version 3.x or higher)
+Django Allauth (version 0.44.0 or higher)
+Django Setup
+
+Let’s create a new Django project and configure Django Allauth.
+
+Create a new Django project
+
+Start by creating a virtual environment and installing Django:
