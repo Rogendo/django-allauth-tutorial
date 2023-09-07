@@ -56,7 +56,11 @@ SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = "optional"
 LOGIN_REDIRECT_URL = "home"
 ACCOUNT_LOGOUT_ON_GET = True
-
+# Additional configuration settings
+SOCIALACCOUNT_QUERY_EMAIL = True
+ACCOUNT_LOGOUT_ON_GET= True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_EMAIL_REQUIRED = True
 
 # EMAIL
 # email account: johniedoe1963@gmail.com
@@ -82,6 +86,7 @@ MIDDLEWARE = [
 
 # Django Allauth Settings
 SOCIALACCOUNT_PROVIDERS = {
+    # github
     'github': {
         'APP': {
             'client_id': '8d82522b9613fa05e069',
@@ -90,6 +95,14 @@ SOCIALACCOUNT_PROVIDERS = {
         },
         'SCOPE': ['user:email'],  # Adjust scopes as needed
     },
+    # google
+    'google': {
+        'SCOPE': ['profile', 'email'],
+        'APP': {
+            'client_id': 'your-google-client-id',
+            'secret': 'your-google-secret',
+        }
+    }
     # Other provider configurations if necessary
 }
 ROOT_URLCONF = 'config.urls'
