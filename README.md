@@ -1,4 +1,4 @@
-# Django Allauth: A Guide to Enabling Social Logins with GitHub and Google
+# Django Allauth: A Guide to Enabling Social Logins with GitHub and Google.
 
 
 Django allauth is a powerful and versatile authentication, registration, and account management solution for Django-based web applications. 
